@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    app:rippleColor="@color/colorPrimaryDark"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.0"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/md_keylines"
+                    android:layout_marginTop="@dimen/md_keylines"
+                    android:ellipsize="end"
+                    android:lines="3"
+                    android:textColor="@color/dark_grey"
+                    android:maxLines="3"
+                    android:textSize="16sp"
+                    tools:text="@string/item_desc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_access_time_black_24dp"></ImageView>
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="11sp" />
+                    <View
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"></View>
+
+                    <com.sackcentury.shinebuttonlib.ShineButton
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:src="@android:color/darker_gray"
+                        android:id="@+id/shineButtonFavList"
+                        app:btn_color="@android:color/darker_gray"
+                        app:btn_fill_color="@android:color/holo_red_dark"
+                        app:allow_random_color="false"
+                        android:layout_marginRight="15dp"
+                        app:siShape="@raw/heart"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageViewThumb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="7"
+                android:scaleType="center"
+                android:src="@drawable/ic_home" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

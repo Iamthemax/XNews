@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">XNews</string>
+    <string name="home">HOME</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="recent_news">Recent News</string>
+    <string name="entertainment_news">Entertainment</string>
+    <string name="options">OPTIONS</string>
+    <string name="search">SEARCH</string>
+    <string name="categories">CATEGORIES</string>
+    <string name="item_desc">desc</string>
+    <string name="share">SHARE</string>
+    <string name="favourites">Favourites</string>
+    <string name="delete">Delete</string>
+    <string name="warn_fav_clear">Do you want to clear all saved posts ?</string>
+    <string name="fashion">Fashion</string>
+    <string name="business">Business</string>
+    <string name="check_internet">Please Check Internet Connection.......</string>
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="@dimen/md_keylines"
+    android:layout_marginRight="@dimen/md_keylines"
+    android:orientation="vertical">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/parentCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rippleColor="@color/colorPrimary"
+        android:clickable="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="75dp"
+            android:scaleType="fitXY"
+            android:id="@+id/imageViewCategoryIcon"
+            android:layout_gravity="center"
+            android:layout_height="75dp" />
+        <TextView
+            android:layout_marginBottom="15dp"
+            android:id="@+id/textViewCatName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_image"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="@string/item_desc" />
+    </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
